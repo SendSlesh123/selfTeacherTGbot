@@ -26,7 +26,7 @@ class User():
                     self.solved_tasks = self.session['solved_tasks']
             except Exception as e:
                 print(f'Error {e}')
-                
+
 
     def writeJSON(self):
         with open(f'{self.path}', 'w') as f:
